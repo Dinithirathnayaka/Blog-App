@@ -1,7 +1,7 @@
 import React from "react";
 import "./post.css";
 
-export default function post() {
+export default function post({ post }) {
   return (
     <div className="post">
       <img
@@ -14,11 +14,9 @@ export default function post() {
           <span className="postCat">Music</span>
           <span className="postCat">Life</span>
         </div>
-        <span className="postTitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </span>
+        <span className="postTitle">{post.title}</span>
         <hr />
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">10/2023</span>
       </div>
       <p className="postDesc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, facere?
